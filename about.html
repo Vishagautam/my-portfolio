@@ -1,430 +1,153 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width" />
-    <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:site_name" content="Vishal Gautam" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://williamlin.io/android-chrome-512x512.png"
-    />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@tmwilliamlin168" />
-    <meta
-      name="twitter:image"
-      content="https://williamlin.io/android-chrome-512x512.png"
-    />
-    <title>About Me - Vishal Gautam</title>
-    <meta name="twitter:title" content="About Me - Vishal Gautam" />
-    <meta property="og:title" content="About Me - Vishal Gautam" />
-    <meta property="og:url" content="https://williamlin.io/about" />
-    <meta
-      name="description"
-      property="og:description"
-      content="About Vishal Gautam: 21-year-old studying at BIET who loves programming and startups. Experienced Competitive Programmer who won contests such as Google Kickstart and IOI."
-    />
-    <meta
-      name="twitter:description"
-      content="About Vishal Gautam: 21-year-old studying at BIET who loves programming and startups. Experienced Competitive Programmer who won contests such as Google Kickstart and IOI."
-    />
-    <meta name="next-head-count" content="21" />
-    <link
-      rel="preload"
-      href="/_next/static/css/86f87d55218af1fbc921.css"
-      as="style"
-    />
-    <link
-      rel="stylesheet"
-      href="/_next/static/css/86f87d55218af1fbc921.css"
-      data-n-g=""
-    />
-    <noscript data-n-css=""></noscript>
-    <link
-      rel="preload"
-      href="/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js"
-      as="script"
-    />
-    <link
-      rel="preload"
-      href="/_next/static/chunks/framework.0c239260661ae1d12aa2.js"
-      as="script"
-    />
-    <link
-      rel="preload"
-      href="/_next/static/chunks/41b360b0aeddb796110cb7a0b035fef35acd7ba6.e5cd5e249655a7fb4a2f.js"
-      as="script"
-    />
-    <link
-      rel="preload"
-      href="/_next/static/chunks/main-f3aec7458510d8a68f27.js"
-      as="script"
-    />
-    <link
-      rel="preload"
-      href="/_next/static/chunks/pages/_app-a40eda744ced47c3d5e7.js"
-      as="script"
-    />
-    <link
-      rel="preload"
-      href="/_next/static/chunks/27331502360598b668fb49eb611b722abcff9c3a.bc2abeac681ee778d982.js"
-      as="script"
-    />
-    <link
-      rel="preload"
-      href="/_next/static/chunks/pages/about-89eefb451b700b169d12.js"
-      as="script"
-    />
-  </head>
-  <body>
-    <div id="__next">
-      <div class="relative z-50">
-        <div
-          class="flex text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl bg-white"
-        >
-          <a
-            class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl py-1 sm:py-1.5 md:py-2 lg:py-2.5 xl:py-3.5 px-3 sm:px-4 md:px-5 lg:px-6 xl:px-7 text-blue-500 hover:bg-gray-200 transition"
-            href="/"
-            >Vishal Gautam</a
-          >
-          <div class="flex-1"></div>
-          <a
-            class="bg-blue-500 hover:bg-blue-600 text-white flex items-center px-3 sm:px-4 md:px-5 lg:px-6 xl:px-7 transition"
-            href="/about"
-            >About</a
-          ><a
-            class="text-blue-500 hover:bg-gray-200 flex items-center px-3 sm:px-4 md:px-5 lg:px-6 xl:px-7 transition"
-            href="/blog"
-            >Blog</a
-          ><a
-            class="text-blue-500 hover:bg-gray-200 flex items-center px-3 sm:px-4 md:px-5 lg:px-6 xl:px-7 transition"
-            href="/200kvote"
-            >200k Vote</a
-          >
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Me – Vishal Gautam</title>
+<meta name="description" content="Learn more about Vishal Gautam, a Software Engineer from Etawah passionate about algorithmic problem-solving and building startups."/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#050508;--surface:#0f0f14;--surface2:#16161d;
+  --accent:#7c6dfa;--accent2:#fa6d9e;--text:#eeeef5;--muted:#7777a0;
+  --border:rgba(255,255,255,0.06);--glow:rgba(124,109,250,0.3);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;min-height:100vh;display:flex;flex-direction:column}
+
+/* NAV */
+nav{position:sticky;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;height:64px;background:rgba(5,5,8,0.7);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.logo{font-size:1.1rem;font-weight:800;letter-spacing:-0.5px;text-decoration:none;color:var(--text)}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.875rem;font-weight:500;transition:color .2s}
+.nav-links a:hover, .nav-links a.active{color:var(--text)}
+
+/* HERO */
+header{padding:6rem 2rem 3rem;text-align:center;position:relative}
+header::before{content:'';position:absolute;top:-50px;left:50%;transform:translateX(-50%);width:600px;height:400px;background:radial-gradient(ellipse,var(--glow) 0%,transparent 60%);pointer-events:none}
+.eyebrow{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);background:rgba(124,109,250,.12);padding:.35rem 1rem;border-radius:999px;margin-bottom:1.5rem}
+h1{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:900;letter-spacing:-2px;line-height:1.1;margin-bottom:1rem}
+h1 span{background:linear-gradient(135deg,var(--accent) 30%,var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* CONTENT */
+.container{max-width:900px;margin:0 auto;padding:0 2rem 5rem;flex:1}
+.about-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:4rem;margin-top:3rem;align-items:start}
+
+.profile-card{background:var(--surface);border:1px solid var(--border);border-radius:24px;padding:2rem;text-align:center;position:sticky;top:100px}
+.avatar{width:140px;height:140px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));margin:0 auto 1.5rem;display:flex;align-items:center;justify-content:center;font-size:4rem;border:4px solid var(--bg)}
+.profile-card h3{font-size:1.5rem;font-weight:700;margin-bottom:.5rem}
+.profile-card p{color:var(--muted);font-size:.9rem;margin-bottom:1.5rem}
+.social-links{display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap}
+.social-btn{background:var(--surface2);color:var(--text);border:1px solid var(--border);padding:.5rem 1rem;border-radius:8px;font-size:.8rem;font-weight:600;text-decoration:none;transition:all .2s}
+.social-btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+
+.story-content{color:var(--muted);font-size:1.1rem;line-height:1.8}
+.story-content p{margin-bottom:1.5rem}
+.story-content h2{color:var(--text);font-size:1.75rem;font-weight:700;letter-spacing:-0.5px;margin:2.5rem 0 1rem}
+.story-content strong{color:var(--text);font-weight:600}
+
+.highlight-box{background:var(--surface);border:1px solid rgba(124,109,250,.3);border-left:4px solid var(--accent);padding:1.5rem 2rem;border-radius:0 12px 12px 0;margin:2rem 0;color:var(--text)}
+
+/* YOUTUBE SECTION */
+.yt-card{background:var(--surface2);border:1px solid var(--border);border-radius:20px;overflow:hidden;margin-top:2rem;transition:transform .2s,box-shadow .2s}
+.yt-card:hover{transform:translateY(-4px);box-shadow:0 10px 40px rgba(0,0,0,.4),0 0 20px var(--glow)}
+.yt-video-placeholder{height:250px;background:linear-gradient(135deg,#1f1c2c,#928dab);display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative}
+.yt-video-placeholder::after{content:'▶';position:absolute;width:60px;height:60px;background:rgba(0,0,0,.5);backdrop-filter:blur(5px);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.5rem;padding-left:4px}
+.yt-body{padding:1.5rem}
+.yt-stat{display:inline-block;background:var(--surface);color:var(--accent);font-size:.75rem;font-weight:700;padding:.3rem .8rem;border-radius:999px;margin-bottom:1rem;border:1px solid var(--border)}
+.yt-body h4{font-size:1.2rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
+.yt-body p{font-size:.9rem;color:var(--muted);margin-bottom:1rem;line-height:1.5}
+.yt-link{color:var(--accent);font-weight:600;font-size:.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem}
+.yt-link:hover{text-decoration:underline}
+
+/* FOOTER */
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:auto}
+footer a{color:var(--accent);text-decoration:none}
+
+/* ANIMATIONS */
+.fade-up{animation:fadeUp .6s ease both}
+.delay-1{animation-delay:.1s}.delay-2{animation-delay:.2s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+@media(max-width:768px){
+  nav{padding:0 1.25rem}.nav-links{display:none}
+  header{padding:4rem 1rem 2rem}
+  .about-grid{grid-template-columns:1fr;gap:2.5rem}
+  .profile-card{position:relative;top:0}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="/"><span>V</span>ishal Gautam</a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about" class="active">About</a></li>
+    <li><a href="/blog">Blog</a></li>
+  </ul>
+</nav>
+
+<header class="fade-up">
+  <span class="eyebrow">My Story</span>
+  <h1>The Developer <br/>Behind The <span>Code</span></h1>
+</header>
+
+<div class="container fade-up delay-1">
+  <div class="about-grid">
+    
+    <!-- LEFT SIDEBAR -->
+    <aside>
+      <div class="profile-card">
+        <div class="avatar">👨‍💻</div>
+        <h3>Vishal Gautam</h3>
+        <p>Software Engineer from Etawah</p>
+        <div class="social-links">
+          <a class="social-btn" href="https://github.com/Vishagautam" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="social-btn" href="https://twitter.com/gautamvishal966" target="_blank" rel="noreferrer">Twitter</a>
+          <a class="social-btn" href="https://www.youtube.com/@vishalgautam" target="_blank" rel="noreferrer">YouTube</a>
+          <a class="social-btn" href="mailto:gautamvishal966@gmail.com">Email</a>
         </div>
       </div>
-      <div class="fixed -top-24 shadow-2xl z-40 w-full">
-        <div class="m-10 h-5"></div>
+    </aside>
+
+    <!-- RIGHT CONTENT -->
+    <main class="story-content">
+      <p>I am a passionate <strong>Software Engineer</strong> based in Etawah, holding a degree in Computer Science from BIET. Also known in the online dev community by my moniker <strong>'ninja'</strong>, I have dedicated a significant part of my life to the world of programming.</p>
+
+      <h2>How it started</h2>
+      <p>I was a 12-year-old who loved playing with Legos when I first discovered videos of Lego robots on YouTube. That simple curiosity led me down a rabbit hole. Slowly, I learned about the endless possibilities of computer programs and experienced the sheer enjoyment of challenging myself to make my logic work.</p>
+      
+      <p>Ever since that initial exposure, programming has completely defined my life. It evolved from a fascinating hobby into a core passion and, ultimately, my career path.</p>
+
+      <div class="highlight-box">
+        <strong>My Philosophy:</strong> In addition to being passionate about programming, I am always eager to challenge myself to do things I've never accomplished before. I strive to learn and improve my skills every single day.
       </div>
-      <div class="sticky top-0 h-1 z-50 bg-blue-300">
-        <div
-          class="h-full bg-blue-500 transition-all ease-out"
-          style="width: 0%"
-        ></div>
-      </div>
-      <div class="p-4 max-w-full md:text-lg lg:text-xl">
-        <div class="mx-auto max-w-full" style="width: 65ch">
-          <br />
-          <h1 class="text-center text-5xl sm:text-7xl md:text-8xl">About Me</h1>
-          <br /><br />
-          <p>
-            I am a 21-year-old from Etawah and I am currently a final year student
-            studying Computer Science at BIET. I am also frequently known by my
-            username ninja.
-          </p>
-          <br />
-          <p>
-            I was an 12-year-old who loved playing with Legos when I discovered<!-- -->
-            <a
-              target="_blank"
-              rel="noreferrer"
-              class="text-blue-500 hover:text-blue-600 transition"
-              href="https://youtu.be/YsRiKlN3_ac"
-              >videos of Lego robots on YouTube</a
-            >. Slowly, I learned about the endless possibilities of computer
-            programs along with the enjoyment of challenging myself to make my
-            programs work. Ever since this initial exposure, programming has
-            defined my life.
-          </p>
-          <br />
-          <p>
-            In addition to being passionate about programming, I am eager to
-            challenge myself to do things I&#x27;ve never accomplished before
-            and I strive to learn and improve on my skills every day (for
-            example, if you have constructive criticism and suggestion about
-            this newly-made website, I&#x27;d be very glad to hear them :D).
-          </p>
-          <h2 class="text-center text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
-            <br />YouTube
-          </h2>
-          <br /><br />
-          <p>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              class="text-blue-500 hover:text-blue-600 transition"
-              href="https://www.youtube.com/channel/UCKuDLsO0Wwef53qdHPjbU2Q"
-              >My YouTube channel</a
-            >
-            <!-- -->has over 300K subscribers, which I mainly post programming
-            content on.
-          </p>
-          <br />
-          <p>
-            My best-performing video with over 5M views is<!-- -->
-            <a
-              target="_blank"
-              rel="noreferrer"
-              class="text-blue-500 hover:text-blue-600 transition"
-              href="https://youtu.be/uGrBHohIgQY"
-              >Winning Google Kickstart Round A</a
-            >, shown below:<br /><br /><span
-              class="inline-block w-full relative"
-              style="padding-bottom: 56.25%"
-              ><iframe
-                src="https://www.youtube.com/embed/uGrBHohIgQY"
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen=""
-                title="video"
-                class="absolute w-full h-full"
-              ></iframe
-            ></span>
-          </p>
-          <h2 class="text-center text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
-            <br />Competitive Programming
-          </h2>
-          <br /><br />
-          <p>
-            One of the areas which I have the most expertise in is<!-- -->
-            <a
-              target="_blank"
-              rel="noreferrer"
-              class="text-blue-500 hover:text-blue-600 transition"
-              href="https://www.youtube.com/watch?v=ueNT-w7Oluw"
-              >CP (Competitive Programming)</a
-            >. Most notably, I obtained first place at the 32nd<!-- -->
-            <a
-              target="_blank"
-              rel="noreferrer"
-              class="text-blue-500 hover:text-blue-600 transition"
-              href="https://en.wikipedia.org/wiki/International_Olympiad_in_Informatics"
-              >IOI (International Olympiad in Informatics)</a
-            >. I started CP in April, 2017 and have roughly three years of
-            experience.
-          </p>
-          <br />
-          <p>
-            As I practice, I love the feeling of satisfaction when I piece
-            together the final part of a problem, code and submit the program,
-            and see the green &quot;Accepted&quot; status on my program after
-            hours of hard work. During contests, I do it for the adrenaline rush
-            when I race against time to type out a solution as fast as possible.
-            CP gives me the same euphoric emotions an athlete would feel when
-            scoring the winning goal. Here are a few of my CP profiles:
-          </p>
-          <br /><br />
-          <div
-            class="grid grid-cols-2 grid-rows-3 sm:grid-cols-3 sm:grid-rows-2 gap-1.5 md:gap-2 lg:gap-2.5"
-          >
-            <a
-              class="flex flex-col group hover:shadow-xl transition focus:ring ring-opacity-50 ring-blue-500 rounded-md"
-              href="http://stats.ioinformatics.org/people/6990"
-              target="_blank"
-              rel="noreferrer"
-              ><div
-                class="border border-blue-500 group-hover:border-blue-600 rounded-t-md py-1 lg:py-1.5 bg-blue-500 group-hover:bg-blue-600 transition text-white text-lg md:text-xl lg:text-2xl"
-              >
-                <img
-                  src="https://www.google.com/s2/favicons?domain=stats.ioinformatics.org"
-                  class="inline mx-2 md:mx-2.5 lg:mx-3"
-                  style="width: 1em; height: 1em; vertical-align: -0.14em"
-                  alt="IOI"
-                />IOI
-              </div>
-              <div
-                class="flex-1 border border-blue-500 group-hover:border-blue-600 rounded-b-md px-1.5 md:px-2 lg:px-2.5 py-1 md:py-1.5 lg:py-2"
-              >
-                <span class="text-yellow-300"
-                  >2020 1st place, Gold<br />(Perfect Score)</span
-                ><br /><span class="text-gray-400"
-                  >2019 56th place, Silver</span
-                >
-              </div></a
-            ><a
-              class="flex flex-col group hover:shadow-xl transition focus:ring ring-opacity-50 ring-blue-500 rounded-md"
-              href="https://codeforces.com/profile/tmwilliamlin168"
-              target="_blank"
-              rel="noreferrer"
-              ><div
-                class="border border-blue-500 group-hover:border-blue-600 rounded-t-md py-1 lg:py-1.5 bg-blue-500 group-hover:bg-blue-600 transition text-white text-lg md:text-xl lg:text-2xl"
-              >
-                <img
-                  src="https://www.google.com/s2/favicons?domain=codeforces.com"
-                  class="inline mx-2 md:mx-2.5 lg:mx-3"
-                  style="width: 1em; height: 1em; vertical-align: -0.14em"
-                  alt="Codeforces"
-                />Codeforces
-              </div>
-              <div
-                class="flex-1 border border-blue-500 group-hover:border-blue-600 rounded-b-md px-1.5 md:px-2 lg:px-2.5 py-1 md:py-1.5 lg:py-2"
-              >
-                Max rating:
-                <span class="text-red-600">2931<br />(Int. Grandmaster)</span
-                ><br />46<!-- -->
-                Contests<span class="hidden sm:inline"> Attended</span
-                ><br />1513<!-- -->
-                Problems<span class="hidden sm:inline"> Solved</span
-                ><br /></div></a
-            ><a
-              class="flex flex-col group hover:shadow-xl transition focus:ring ring-opacity-50 ring-blue-500 rounded-md"
-              href="https://www.codechef.com/users/tmwilliamlin"
-              target="_blank"
-              rel="noreferrer"
-              ><div
-                class="border border-blue-500 group-hover:border-blue-600 rounded-t-md py-1 lg:py-1.5 bg-blue-500 group-hover:bg-blue-600 transition text-white text-lg md:text-xl lg:text-2xl"
-              >
-                <img
-                  src="https://www.google.com/s2/favicons?domain=codechef.com"
-                  class="inline mx-2 md:mx-2.5 lg:mx-3"
-                  style="width: 1em; height: 1em; vertical-align: -0.14em"
-                  alt="CodeChef"
-                />CodeChef
-              </div>
-              <div
-                class="flex-1 border border-blue-500 group-hover:border-blue-600 rounded-b-md px-1.5 md:px-2 lg:px-2.5 py-1 md:py-1.5 lg:py-2"
-              >
-                Max rating: <span class="text-red-600">2916<br />(7 stars)</span
-                ><br />24<!-- -->
-                Contests<span class="hidden sm:inline"> Attended</span
-                ><br />283<!-- -->
-                Problems<span class="hidden sm:inline"> Solved</span
-                ><br /></div></a
-            ><a
-              class="flex flex-col group hover:shadow-xl transition focus:ring ring-opacity-50 ring-blue-500 rounded-md"
-              href="https://atcoder.jp/users/tmwilliamlin168"
-              target="_blank"
-              rel="noreferrer"
-              ><div
-                class="border border-blue-500 group-hover:border-blue-600 rounded-t-md py-1 lg:py-1.5 bg-blue-500 group-hover:bg-blue-600 transition text-white text-lg md:text-xl lg:text-2xl"
-              >
-                <img
-                  src="https://www.google.com/s2/favicons?domain=atcoder.jp"
-                  class="inline mx-2 md:mx-2.5 lg:mx-3"
-                  style="width: 1em; height: 1em; vertical-align: -0.14em"
-                  alt="AtCoder"
-                />AtCoder
-              </div>
-              <div
-                class="flex-1 border border-blue-500 group-hover:border-blue-600 rounded-b-md px-1.5 md:px-2 lg:px-2.5 py-1 md:py-1.5 lg:py-2"
-              >
-                Max rating:
-                <span class="text-yellow-500">2723<br />(4 Dan)</span
-                ><br />27<!-- -->
-                Contests<span class="hidden sm:inline"> Attended</span
-                ><br />163<!-- -->
-                Problems<span class="hidden sm:inline"> Solved</span
-                ><br /></div></a
-            ><a
-              class="flex flex-col group hover:shadow-xl transition focus:ring ring-opacity-50 ring-blue-500 rounded-md"
-              href="https://www.hackerrank.com/tmwilliamlin168"
-              target="_blank"
-              rel="noreferrer"
-              ><div
-                class="border border-blue-500 group-hover:border-blue-600 rounded-t-md py-1 lg:py-1.5 bg-blue-500 group-hover:bg-blue-600 transition text-white text-lg md:text-xl lg:text-2xl"
-              >
-                <img
-                  src="https://www.google.com/s2/favicons?domain=hackerrank.com"
-                  class="inline mx-2 md:mx-2.5 lg:mx-3"
-                  style="width: 1em; height: 1em; vertical-align: -0.14em"
-                  alt="HackerRank"
-                />HackerRank
-              </div>
-              <div
-                class="flex-1 border border-blue-500 group-hover:border-blue-600 rounded-b-md px-1.5 md:px-2 lg:px-2.5 py-1 md:py-1.5 lg:py-2"
-              >
-                Max rating:
-                <!-- -->2698<br />19<!-- -->
-                Contests<span class="hidden sm:inline"> Attended</span
-                ><br />309<!-- -->
-                Problems<span class="hidden sm:inline"> Solved</span
-                ><br /></div></a
-            ><a
-              class="flex flex-col group hover:shadow-xl transition focus:ring ring-opacity-50 ring-blue-500 rounded-md"
-              href="https://leetcode.com/tmwilliamlin168/"
-              target="_blank"
-              rel="noreferrer"
-              ><div
-                class="border border-blue-500 group-hover:border-blue-600 rounded-t-md py-1 lg:py-1.5 bg-blue-500 group-hover:bg-blue-600 transition text-white text-lg md:text-xl lg:text-2xl"
-              >
-                <img
-                  src="https://www.google.com/s2/favicons?domain=leetcode.com"
-                  class="inline mx-2 md:mx-2.5 lg:mx-3"
-                  style="width: 1em; height: 1em; vertical-align: -0.14em"
-                  alt="LeetCode"
-                />LeetCode
-              </div>
-              <div
-                class="flex-1 border border-blue-500 group-hover:border-blue-600 rounded-b-md px-1.5 md:px-2 lg:px-2.5 py-1 md:py-1.5 lg:py-2"
-              >
-                Max rating:
-                <!-- -->3323<br />31<!-- -->
-                Contests<span class="hidden sm:inline"> Attended</span
-                ><br />190<!-- -->
-                Problems<span class="hidden sm:inline"> Solved</span><br /></div
-            ></a>
-          </div>
-          <br />
+
+      <h2>YouTube & Community</h2>
+      <p>Beyond writing code, I love sharing my knowledge and journey with others. Over the years, I've built a community on YouTube focused mainly on programming and competitive coding content.</p>
+
+      <div class="yt-card">
+        <div class="yt-video-placeholder">💻</div>
+        <div class="yt-body">
+          <span class="yt-stat">300K+ Subscribers</span>
+          <h4>Winning Google Kickstart Round A</h4>
+          <p>My best-performing video with over 5M views! In this video, I break down my approach and live thought process during one of the most competitive programming contests globally.</p>
+          <a class="yt-link" href="https://www.youtube.com/@vishalgautam" target="_blank" rel="noreferrer">Watch on YouTube <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
-    </div>
-    <script id="__NEXT_DATA__" type="application/json">
-      {
-        "props": { "pageProps": {} },
-        "page": "/about",
-        "query": {},
-        "buildId": "hhliFke1OY22zyaERw_gc",
-        "nextExport": true,
-        "autoExport": true,
-        "isFallback": false
-      }
-    </script>
-    <script
-      nomodule=""
-      src="/_next/static/chunks/polyfills-040103c5c51c5268569e.js"
-    ></script>
-    <script
-      src="/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/framework.0c239260661ae1d12aa2.js"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/41b360b0aeddb796110cb7a0b035fef35acd7ba6.e5cd5e249655a7fb4a2f.js"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/main-f3aec7458510d8a68f27.js"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/pages/_app-a40eda744ced47c3d5e7.js"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/27331502360598b668fb49eb611b722abcff9c3a.bc2abeac681ee778d982.js"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/chunks/pages/about-89eefb451b700b169d12.js"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/hhliFke1OY22zyaERw_gc/_buildManifest.js"
-      async=""
-    ></script>
-    <script
-      src="/_next/static/hhliFke1OY22zyaERw_gc/_ssgManifest.js"
-      async=""
-    ></script>
-  </body>
+
+    </main>
+  </div>
+</div>
+
+<footer>
+  <p>© 2024 Vishal Gautam · <a href="/">Back to Home</a></p>
+</footer>
+
+</body>
 </html>
